@@ -19,14 +19,14 @@ npm install vue-date-picker
 
 ```javascript
 // main.js file
-import DatePicker from 'vue-date-picker';
+import DatePicker from 'vue-multiple-date-picker';
 Vue.component('Datepicker', DatePicker)
 ```
 
 
 ```vue
 <script>
-  import Datepicker from 'vue-date-picker';
+  import Datepicker from 'vue-multiple-date-picker';
   export default {
     components: {
       Datepicker
