@@ -12,21 +12,21 @@
 **Installing**
 
 ```bash
-npm install vue-m-datepicker
+npm install m-datepicker-vue
 ```
 
 **Import to Project**
 
 ```javascript
 // main.js file
-import DatePicker from 'vue-m-datepicker';
+import DatePicker from 'm-datepicker-vue';
 Vue.component('Datepicker', DatePicker)
 ```
 
 
 ```vue
 <script>
-  import Datepicker from 'vue-m-datepicker';
+  import Datepicker from 'm-datepicker-vue';
   export default {
     components: {
       Datepicker
