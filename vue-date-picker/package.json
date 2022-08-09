@@ -15,9 +15,10 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "build-library" : "vue-cli-service build --target lib --name vue-multiple-date-picker ./src/install.js",
+    "packagess" :"vue-cli-service build NODE_ENV=production --target lib --name m-datepicker-vue --entry ./src/components/DatePicker.vue --dest ./lib",
     "lint": "vue-cli-service lint"
   },
-  "main" : ".dist/vue-multiple-date-picker.common.js",
+  "main": "./lib/vue-multiple-date-picker.umd.js",
   "files": ["dist/*"],
   "dependencies": {
     "core-js": "^3.8.3",
