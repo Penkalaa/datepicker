@@ -170,7 +170,7 @@
 
 <script>
 export default {
-  name: "DatePickerV2",
+  name: "DatePicker",
   props: {
     range: {
       type: Boolean,

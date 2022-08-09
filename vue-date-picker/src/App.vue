@@ -1,17 +1,10 @@
 <template>
   <div id="app">
     <div>
-      <h3>Single</h3>
-      <DatePicker msg="Welcome to Your Vue.js App" />
-    </div>
-    <div>
-      <h3>Multiple Drag</h3>
-      <DatePicker :multipleDrag="true" msg="Welcome to Your Vue.js App" />
-    </div>
-    <div>
       <h3>Range</h3>
-      <DatePicker :range="true" :maxDate="new Date()" msg="Welcome to Your Vue.js App" />
+      <DatePicker @selectedValue="deneme" :range="true" msg="Welcome to Your Vue.js App" />
     </div>
+   
   </div>
 </template>
 
@@ -23,6 +16,11 @@ export default {
   components: {
     DatePicker,
   },
+  methods: {
+    deneme(val) {
+      console.log(val)
+    }
+  }
 };
 </script>
 

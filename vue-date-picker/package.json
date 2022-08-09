@@ -1,12 +1,24 @@
 {
   "name": "vue-date-picker",
+  "description": "Vue Datepicker first edition",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "author": {
+    "name": "Enes Turan",
+    "email": "enesturan9215@gmail.com"
+  },
+  "repository": "https://github.com/tushargugnani/vue-hello-world-simple",
+  "bugs": "https://github.com/tushargugnani/vue-hello-world-simple/issues",
+  "keywords": ["vue", "datepicker", "multiple-datepicker", "range", "single"],
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build-library" : "vue-cli-service build --target lib --name vue-multiple-date-picker ./src/install.js",
     "lint": "vue-cli-service lint"
   },
+  "main" : ".dist/vue-multiple-date-picker.common.js",
+  "files": ["dist/*"],
   "dependencies": {
     "core-js": "^3.8.3",
     "sass": "^1.53.0",
